@@ -167,6 +167,7 @@ export async function bookTicket(passenger, trainNumber, date, classType) {
       date,
       class: classType,
       status: "waitlisted",
+      fare: fareMap[classType],
       waitlistNumber: Math.floor(Math.random() * 20) + 1,
     };
   }
